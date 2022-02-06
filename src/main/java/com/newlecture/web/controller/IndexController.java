@@ -10,10 +10,9 @@ public class IndexController implements Controller{
 
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		ModelAndView mv = new ModelAndView();
+		ModelAndView mv = new ModelAndView("index");
 		mv.addObject("data","Hello Spring MVC~");
-		mv.setViewName("index.jsp");
-		
+		//mv.setViewName("/WEB-INF/view/index.jsp");
 		return mv;
 	}
 
