@@ -12,9 +12,12 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.newlecture.web.entity.Notice;
 
+@Service
 public class NoticeService {
 	/*
 	 * private String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe"; private String
